@@ -203,5 +203,7 @@ d!addbot
 
 ## Благодарности
 
-https://github.com/adriansteffan/DiscordJockey
-https://github.com/Krutyi-4el/DandelionMusic
+1.https://github.com/adriansteffan/DiscordJockey
+
+
+2.https://github.com/Krutyi-4el/DandelionMusic
