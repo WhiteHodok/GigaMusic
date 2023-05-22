@@ -5,27 +5,21 @@
 
 
 # GigaMusic
-A Discord music bot written in Python with support for Youtube, SoundCloud, Spotify, Bandcamp, Twitter, and custom files.
+Музыкальный бот для Discord, написанный на Python с поддержкой Youtube, SoundCloud, Spotify, Bandcamp, Twitter и пользовательских файлов.
 
-### Keep in mind:
-* The Wiki may have the answer you are looking for https://github.com/Krutyi-4el/DandelionMusic/wiki
-* Known problems are listed in Issues. If you are interested in this project feel free to submit an Issue.
+### Имейте в виду:
+* В Вики может быть ответ, который вы ищете https://github.com/Krutyi-4el/DandelionMusic/wiki.
+* Известные проблемы перечислены в Issues. Если вы заинтересованы в этом проекте, не стесняйтесь подать заявку.
 
 
-<h3>What's Coming?</h1>
-
-  - See TODO in Projects tab
-
-## Prerequisites:
-
-#### API Keys
+#### API-ключи
 * Discord - https://discord.com/developers
-* Spotify (optional) - https://developer.spotify.com/dashboard/
-  - Client ID
-  - Client Secret
-  - Note: Limited to 50 playlist items without API
+* Spotify (опционально) - https://developer.spotify.com/dashboard/
+  - Идентификатор клиента
+  - Секрет клиента
+  - Примечание: Ограничение на 50 элементов плейлиста без API
 
-Obtained keys must be entered into ```config.json``` (or set as environment variables)
+Полученные ключи должны быть введены в ```config.json``` (or set as environment variables)
 
 #### Requirements (skip this if you've decided to use pre-built exe)
 
@@ -37,122 +31,122 @@ pip install -r requirements.txt
 ```
 
 ##### Windows
-Download `ffmpeg` and put it into a folder in PATH.
+Скачайте `ffmpeg` и поместите его в папку в PATH.
 
-If ffmpeg is not found, the script will try to download it automatically.
-##### Other platforms
-Install `ffmpeg` and `libopus` packages.
+Если ffmpeg не найден, скрипт попытается загрузить его автоматически.
+##### Другие платформы
+Установите пакеты `ffmpeg` и `libopus`.
 
-### Installing - Self hosting
+### Установка - Самостоятельный хостинг
 
-1. Download release if available, alternatively download repository zip
-2. Complete Prerequisites
-3. Start ```run.py``` in project root (or the exe)
-4. See configuration options in config.json (more info at https://github.com/Krutyi-4el/DandelionMusic/wiki/Configuration)
+1. Загрузите релиз, если он доступен, в качестве альтернативы загрузите zip-архив репозитория.
+2. Выполните предварительные условия
+3. Запустите ``run.py`` в корне проекта (или exe)
+4. Посмотреть параметры конфигурации в config.json (больше информации на https://github.com/Krutyi-4el/DandelionMusic/wiki/Configuration).
 
-Button play plugin:
-* Set emoji with the setting command to enable this feature
-* Emote must be available for bot
-* Needs Manage Message permissions
+Плагин для воспроизведения кнопок:
+* Установите эмодзи с помощью команды настройки, чтобы включить эту функцию.
+* Эмодзи должны быть доступны для бота
+* Требуются разрешения на управление сообщениями
 
-Custom Cookies:
-* Extract cookies.txt from you browser using your preferred method
-* Overwrite the existing cookies.txt in /config/cookies/
-* (Optional) Set a custom cookies.txt location by modifying COOKIE_PATH in config.py
+Пользовательские Cookies:
+* Извлеките файл cookies.txt из браузера, используя предпочтительный метод.
+* Перепишите существующий файл cookies.txt в /config/cookies/
+* (Необязательно) Установите пользовательское местоположение cookies.txt, изменив COOKIE_PATH в config.py
 
 
-## Commands:
+## Команды:
 
-### Music
+### Музыка
 
-After the bot has joined your server, use ```d!help``` to display help and command information.
+После того, как бот присоединился к вашему серверу, используйте ``d!help`` для отображения справки и информации о командах.
 
 
 ```
 d!p [link/video title/key words/playlist-link/soundcloud link/spotify link/bandcamp link/twitter link]
 ```
 
-* Plays the audio of supported website
-    - A link to the video (https://ww...)
-    - The title of a video ex. (Gennifer Flowers - Fever Dolls)
-    - A link to a YouTube playlist
-* If a song is playing, it will be added to queue
+* Воспроизводит аудио поддерживаемого веб-сайта
+    - Ссылка на видео (https://ww...)
+    - Название видео, например (Gennifer Flowers - Fever Dolls).
+    - Ссылка на плейлист YouTube.
+* Если песня играет, она будет добавлена в очередь.
 
-#### Playlist Commands
+#### Команды плейлиста
 
 ```
 d!skip / d!s
 ```
 
-* Skips the current song and plays next in queue.
+* Пропускает текущую песню и воспроизводит следующую в очереди.
 
 ```
 d!q
 ```
 
-* Show the list of songs in queue
+* Показать список песен в очереди
 
 ```
 d!shuffle / d!sh
 ```
 
-* Shuffle the queue
+* Перемешать очередь
 
 ```
 d!l / d!loop [all/single/off]
 ```
 
-* Loops the entire queue by default. `d!loop single` loops current track.
+* По умолчанию зацикливает всю очередь. ``d!loop single`` зацикливает текущий трек.
 
 ```
 d!mv / d!move
 ```
 
-* Move song position in queue
+* Перемещение позиции композиции в очереди.
 
-#### Audio Commands
+#### Аудиокоманды
 
 ```
 d!pause
 ```
 
-* Pauses the current song.
+* Приостанавливает текущую песню.
 
 ```
 d!resume
 ```
 
-* Resumes the paused song.
+* Возобновляет приостановленную песню.
 
 ```
 d!prev
 ```
 
-* Goes back one song and plays the last song again.
+* Возврат на одну песню назад и повторное воспроизведение последней песни.
 
 ```
 d!np
 ```
 
-* Shows more details about the current song.
+* Показывает более подробную информацию о текущей песне.
 
 ```
 d!volume / d!vol
 ```
 
-* Adjust the volume 1-100%
-* Pass no arguments for current volume
+* Регулировка громкости 1-100%.
+* Передать без аргументов для текущей громкости
 
 ```
 d!remove / d!rm
 ```
 
-* Removes a song from the queue (defaults to last song)
+* Удаляет песню из очереди (по умолчанию последняя песня)
 
 ```
 d!stop / d!st
 ```
-* Stops the current song and clears the playqueue.
+* Останавливает текущую песню и очищает очередь воспроизведения.
 
 
 ### General
@@ -160,53 +154,54 @@ d!stop / d!st
 ```
 d!settings / d!setting / d!set
 ```
-* No Arguments: Lists server settings
-* Arguments: (setting) (value)
-* Omit the value to reset a setting
-* Example: d!setting start_voice_channel ChannelName
-* Administrators and DJs only
+* Без аргументов: Перечисляет настройки сервера
+* Аргументы: (настройка) (значение)
+* Опустите значение, чтобы сбросить настройку.
+* Пример: d!setting start_voice_channel ChannelName
+* Только для администраторов и диджеев
 
 ```
 d!c
 ```
 
-* Connects the bot to the user's voice channel
+* Подключает бота к голосовому каналу пользователя.
 
 ```
 d!dc
 ```
 
-* Disconnects the bot from the current voice channel
+* Отключает бота от текущего голосового канала
 
 ```
 d!history
 ```
-* Shows you the titles of the X last played songs. Configurable in config.json
+* Показывает названия X последних проигранных песен. Настраивается в config.json
 
 
-### Utility
+### Утилита
 
 ```
 d!reset / d!rs
 ```
 
-* Disconnect and reconnect to the voice channel
+* Отключение и повторное подключение к голосовому каналу
 
 ```
 d!ping
 ```
 
-* Test bot connectivity
+* Проверить связь с ботом
 
 ```
 d!addbot
 ```
 
-* Displays information on how to add the bot to another server of yours.
+* Отображает информацию о том, как добавить бота на другой ваш сервер.
 
 
 
 
-## Acknowledgements
+## Благодарности
 
 https://github.com/adriansteffan/DiscordJockey
+https://github.com/Krutyi-4el/DandelionMusic
