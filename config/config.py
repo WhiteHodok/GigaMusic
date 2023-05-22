@@ -7,7 +7,7 @@ from config.utils import get_env_var, alchemize_url
 
 
 DEFAULTS = {
-    "BOT_TOKEN": "MTExMDExNDMwNjQ0MTM1OTQyMg.G07m5e.WduFp9AY9tSAlkgTvs3HVQumk4yeYoCAV-luak",
+    "BOT_TOKEN": "",
     "SPOTIFY_ID": "",
     "SPOTIFY_SECRET": "",
 
