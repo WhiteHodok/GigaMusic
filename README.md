@@ -1,7 +1,8 @@
-![](https://repository-images.githubusercontent.com/494393877/c7c7a9a7-321a-48a0-b19d-b1e7dcf2a1c0) 
+![botlogo](https://github.com/WhiteHodok/GigaMusic/assets/39564937/43877767-8f35-4c8b-bc3d-753ebc6bdd6f)
 
 
-# DandelionMusic
+
+# GigaMusic
 A Discord music bot written in Python with support for Youtube, SoundCloud, Spotify, Bandcamp, Twitter, and custom files.
 
 ### Keep in mind:
@@ -57,11 +58,6 @@ Custom Cookies:
 * Overwrite the existing cookies.txt in /config/cookies/
 * (Optional) Set a custom cookies.txt location by modifying COOKIE_PATH in config.py
 
-### Docker image
-
-You can find pre-built Docker image at https://hub.docker.com/repository/docker/krutyi4el/dandelion-music/
-
-See https://github.com/Krutyi-4el/DandelionMusic/wiki/Configuration for description of environment variables.
 
 ## Commands:
 
@@ -206,12 +202,7 @@ d!addbot
 
 * Displays information on how to add the bot to another server of yours.
 
-## License
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the [GNU General Public License](LICENSE) as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
 
 
 ## Acknowledgements
