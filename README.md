@@ -5,7 +5,7 @@
 
 
 # GigaMusic
-Музыкальный бот для Discord, написанный на Python с поддержкой Youtube, SoundCloud, Spotify, Bandcamp, Twitter и пользовательских файлов.
+Музыкальный бот для Discord, написанный на Python с поддержкой Youtube, SoundCloud, Spotify, Bandcamp, Twitter и пользовательских файлов. Отличием от других форков является переписанный обработчик исключений и 95% русификация насртоек и исключений бота.
 
 ### Имейте в виду:
 * В Вики может быть ответ, который вы ищете https://github.com/Krutyi-4el/DandelionMusic/wiki.
